@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="STUDENT INFORMATION MANAGEMENT SYSTEM"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:id="@+id/nameedt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:background="@drawable/rounded_edt"
+        app:layout_constraintTop_toBottomOf="@+id/headertxt"
+        />
+    <EditText
+        android:id="@+id/regedt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edt"
+        android:hint="Registration"
+        app:layout_constraintTop_toBottomOf="@+id/nameedt"
+        />
+    <EditText
+        android:id="@+id/depedt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Department"
+        android:background="@drawable/rounded_edt"
+        app:layout_constraintTop_toBottomOf="@+id/regedt"/>
+    <EditText
+        android:id="@+id/semedt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Semester"
+        android:inputType="number"
+        android:background="@drawable/rounded_edt"
+        app:layout_constraintTop_toBottomOf="@+id/depedt"
+        />
+    <EditText
+        android:id="@+id/cgpaedt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="CGPA"
+        android:inputType="number"
+        android:background="@drawable/rounded_edt"
+        app:layout_constraintTop_toBottomOf="@+id/semedt"
+        />
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cgpaedt"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
